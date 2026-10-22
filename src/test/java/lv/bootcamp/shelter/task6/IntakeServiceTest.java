@@ -11,6 +11,8 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.time.LocalDate;
 
+import static org.mockito.Mockito.when;
+
 /**
  * Task 7: Mocking a dependency
  *
@@ -50,6 +52,8 @@ class IntakeServiceTest {
             // TODO: Call service.intake(buddy)
             // TODO: Assert the returned animal has name "Buddy"
             // TODO: Verify that repository.save(buddy) was called exactly once
+            when(repository.save(buddy)).thenReturn(buddy);
+
         }
 
         @Test
