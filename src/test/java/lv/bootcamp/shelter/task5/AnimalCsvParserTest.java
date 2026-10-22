@@ -150,8 +150,6 @@ class AnimalCsvParserTest {
         @Test
         @DisplayName("handles age 0 as valid")
         void shouldAcceptAgeZero() {
-            // TODO: Parse a row with age=0
-            // TODO: Assert result isPresent() and age is 0
             Optional<Animal> result = parser.parseRow("Buddy,Dog,0,true,2026-01-15");
 
             assertThat(result).isPresent();

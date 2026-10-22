@@ -1,0 +1,6 @@
+1. AnimalCsvParser - empty CSV file is not covered in tests.
+It is worth testing to verify that parser handles empty files correctly and returns an empty list without throwing exceptions.
+
+2. AnimalSorter - null input in sorting methods.
+Tests cover only null input for sortByAge(). It would help catch bugs if in future update null handling was changed or removed.
+
